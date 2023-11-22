@@ -9,10 +9,10 @@ function App() {
   const favMovies = [];
 
   function sonrakiFilm() {
-    setSira((prevIndex) => (prevIndex + 1) % movies.length);
+    setSira((sonraki) => (sonraki + 1) % movies.length);
   }
   function oncekiFilm() {
-    setSira((prevIndex) => (prevIndex - 1 + movies.length) % movies.length);
+    setSira((onceki) => (onceki - 1 + movies.length) % movies.length);
   }
   function sıfırla() {
     setSira(0);
